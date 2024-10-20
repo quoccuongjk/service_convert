@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import ChatbotAPIView
+from .views import ConvertData
 
 urlpatterns = [
-    path('chat/', ChatbotAPIView.as_view(), name='chatbot_api'),
+    path('convertdata/', ConvertData.as_view(), name='convertdata'),
 ]

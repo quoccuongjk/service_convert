@@ -9,7 +9,7 @@ import os
 from .serializers import ChatRequestSerializer
 from .train_intent import get_intent_from_question
 
-class ChatbotAPIView(APIView):
+class ConvertData(APIView):
     def post(self, request):
         serializer = ChatRequestSerializer(data=request.data)
         if serializer.is_valid():
